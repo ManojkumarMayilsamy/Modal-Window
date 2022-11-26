@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+font-size: 16px;
+}
+
+:root{
+    --clr-charcoal: #264653ff;
+    --clr-persian-green: #2a9d8fff;
+    --clr-maize-crayola: #e9c46aff;
+    --clr-sandy-brown: #f4a261ff;
+    --clr-burnt-sienna: #e76f51ff;
+    --clr-white : #fffafa;
+    --clr-black : #383838;
+    --box-shadow:0px 22px 12px rgba(0,0,0l0.15);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.title{
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--clr-white);
+}
+
+.buttons{
+    height: 6rem;
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.75rem 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-one , .btn-two , .btn-three{
+    background-color: var(--clr-persian-green);
+    color: var(--clr-white);
+    border: 2px solid var(--clr-persian-green);
+}
+
+.modal{
+    width: 360px;
+    padding: 2rem;
+    margin: auto;
+    background-color: var(--clr-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.modal-text{
+    font-size: 1.15rem;
+    padding-bottom: 2rem;
+}
+
+.btn-close{
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--clr-burnt-sienna);
+    border: 2px solid var(--clr-burnt-sienna);
+    color: var(--clr-white);
+}
+
+
+.show{
+    display: block;
+}
+
+.close{
+    display: none;
+}
